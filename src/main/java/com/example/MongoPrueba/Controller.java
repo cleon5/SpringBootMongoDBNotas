@@ -12,6 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/api")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST,RequestMethod.DELETE,RequestMethod.PUT})
 public class Controller {
     private final Servicetareas servicetareas;
 
